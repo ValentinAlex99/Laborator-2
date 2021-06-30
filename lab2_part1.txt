@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+int nr_par(int n)
+{
+if((n&1)==0) cout <<"Este numar par";
+
+        else cout <<"Nu este numar par";
+}
+
+
+int main()
+{int n,x,p=1,c=1,k=10;
+cout<<"Dati o valoare lui n=";
+cin>>n;
+cout<<"Dati o valoare lui x=";
+cin>>x;
+cout<<"Calculam produsul n*8 care este:";
+p=n*8;
+cout<<p;
+cout<<endl;
+cout<<"Catul impartirii lui n la 4 este:";
+c=n/4;
+cout<<c;
+cout<<endl;
+cout<<"Calculam produsul n*10 este:";
+unsigned n_ori_8=k<<3;
+unsigned n_ori_2=k<<1;
+cout<<n_ori_8+n_ori_2;
+cout<<endl;
+nr_par(n);
+cout<<endl;
+cout<<"Bitul n din x este:";
+ bool bit = x & (1<<n);
+
+    return 0;
+}
